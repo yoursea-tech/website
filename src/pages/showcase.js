@@ -2,16 +2,21 @@ import * as React from "react";
 import { useEffect } from "react";
 import '../../node_modules/reveal.js/dist/reveal.css'
 import '../../node_modules/reveal.js/dist/theme/black.css'
-import Reveal from "reveal.js";
-import Markdown from "reveal.js/plugin/markdown/markdown.esm.js";
+
 
 const ShowcasePage = () => {
   useEffect(() => {
-    let deck = new Reveal(document.querySelector(".deck"), {
-      embedded: true,
-      plugins: [Markdown]
-    });
-    deck.initialize();
+    import(/* webpackChunkName: "Reveal" */ '../../node_modules/reveal.js/dist/reveal').then( module1 => {
+      const Reveal = module1.default
+      import(/* webpackChunkName: "Markdown" */ '../../node_modules/reveal.js/plugin/markdown/markdown.esm').then(module2 => {
+        const Markdown = module2.default
+        let deck = new Reveal(document.querySelector(".deck"), {
+          embedded: true,
+          plugins: [Markdown]
+        });
+        deck.initialize();
+      })
+    })
   }, []);
 
   return (

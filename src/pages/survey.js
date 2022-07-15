@@ -4,21 +4,20 @@ import "survey-core/modern.min.css";
 import { StylesManager, Model } from "survey-core";
 import { Survey } from "survey-react-ui";
 
-StylesManager.applyTheme("modern");
-
 const SurveyPage = () => {
-    
-  const [survey, setSurvey] = useState(true);
+  const isSSR = typeof window === "undefined";
+  const [model, setModel] = useState(undefined);
 
   useEffect(() => {
-    fetch('survey.json')
-    .then( res => res.json())
-    .then( res => {
-        setSurvey(new Model(res))
-    })
-  }, [])
+    StylesManager.applyTheme("modern");
+    fetch("survey.json")
+      .then((res) => res.json())
+      .then((res) => {
+        setModel(new Model(res));
+      });
+  }, []);
 
-  return !survey ? <div>Loading...</div> : <Survey model={survey} />;
+  return !isSSR && model && <Survey model={model} />;
 };
 
 export default SurveyPage;
