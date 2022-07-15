@@ -1,5 +1,6 @@
 import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
+import { Link } from "gatsby";
 
 const IndexPage = () => {
   return (
@@ -9,13 +10,12 @@ const IndexPage = () => {
           <div class="site-header-inner">
             <div class="brand header-brand">
               <h1 class="m-0">
-                <a href="#">
                   <StaticImage
                     class="header-logo-image"
-                    src="../images/logo.svg"
+                    src="../images/yoursea-icon.svg"
                     alt="Logo"
                   />
-                </a>
+                  <span className="ml-1">YourSEA</span>
               </h1>
             </div>
           </div>
@@ -27,18 +27,18 @@ const IndexPage = () => {
           <div class="container">
             <div class="hero-inner">
               <div class="hero-copy">
-                <h1 class="hero-title mt-0">YourSEA</h1>
+                <h1 class="hero-title mt-0">Ride our wave</h1>
                 <p class="hero-paragraph">
-                  Our landing page template works on all devices, so you only
-                  have to set it up once, and get beautiful results forever.
+                  We are building next generation services to help you choose
+                  the best sea spot wherever you go.
                 </p>
                 <div class="hero-cta">
-                  <a class="button button-primary" href="#">
+                  <Link class="button button-primary" to="/survey">
                     Take our survey
-                  </a>
-                  <a class="button" href="#">
-                    Get in touch
-                  </a>
+                  </Link>
+                  <Link class="button" to="/showcase">
+                    Showcase
+                  </Link>
                 </div>
               </div>
               <div class="hero-figure anime-element">
@@ -231,7 +231,7 @@ const IndexPage = () => {
           </div>
         </section>
 
-        <section class="pricing section">
+        {/* <section class="pricing section">
           <div class="container-sm">
             <div class="pricing-inner section-inner">
               <div class="pricing-header text-center">
@@ -297,20 +297,18 @@ const IndexPage = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
 
       <footer class="site-footer">
         <div class="container">
           <div class="site-footer-inner">
             <div class="brand footer-brand">
-              <a href="#">
                 <StaticImage
                   class="header-logo-image"
-                  src="../images/logo.svg"
+                  src="../images/yoursea-icon.svg"
                   alt="Logo"
                 />
-              </a>
             </div>
             <ul class="footer-links list-reset">
               <li>
@@ -374,7 +372,7 @@ const IndexPage = () => {
               </li>
             </ul>
             <div class="footer-copyright">
-              &copy; 2019 Solid, all rights reserved
+              &copy; 2022 YourSEA, all rights reserved
             </div>
           </div>
         </div>

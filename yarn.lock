@@ -9668,7 +9668,7 @@ react-dev-utils@^12.0.1:
     strip-ansi "^6.0.1"
     text-table "^0.2.0"
 
-react-dom@^18.1.0:
+"react-dom@^16.5.0 || ^17.0.1 || ^18.1.0", react-dom@^18.1.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.2.0.tgz#22aaf38708db2674ed9ada224ca4aa708d821e3d"
   integrity sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==
@@ -9721,7 +9721,7 @@ react-side-effect@^2.1.0:
   resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-2.1.2.tgz#dc6345b9e8f9906dc2eeb68700b615e0b4fe752a"
   integrity sha512-PVjOcvVOyIILrYoyGEpDN3vmYNLdy1CajSFNt4TDsVQC5KpTijDvWVoR+/7Rz2xT978D8/ZtFceXxzsPwZEDvw==
 
-react@^18.1.0:
+"react@^16.5.0 || ^17.0.1 || ^18.1.0", react@^18.1.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
@@ -10082,6 +10082,11 @@ reusify@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/reusify/-/reusify-1.0.4.tgz#90da382b1e126efc02146e90845a88db12925d76"
   integrity sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==
+
+reveal.js@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/reveal.js/-/reveal.js-4.3.1.tgz#24a63300cff92cf5cbdd40a46f5d3699614d49ca"
+  integrity sha512-1kyEnWeUkaCdBdX//XXq9dtBK95ppvIlSwlHelrP8/wrX6LcsYp4HT9WTFoFEOUBfVqkm8C2aHQ367o+UKfcxw==
 
 rework-visit@1.0.0:
   version "1.0.0"
@@ -10854,6 +10859,20 @@ supports-preserve-symlinks-flag@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
+
+survey-core@*:
+  version "1.9.40"
+  resolved "https://registry.yarnpkg.com/survey-core/-/survey-core-1.9.40.tgz#40b45e85d242d141349d4d8a7722e78ef1f9023a"
+  integrity sha512-oYKRDqeigleseDqF/za0ZtSqn+Tg5clxLyG0bXiAQ0K2l/J5JPRigMuI7VbW4+Er5lU04JfMpzcw9/U8pP3Niw==
+
+survey-react-ui@^1.9.40:
+  version "1.9.40"
+  resolved "https://registry.yarnpkg.com/survey-react-ui/-/survey-react-ui-1.9.40.tgz#5b6c2559c05cce38a1977895fb04aab1e95054e4"
+  integrity sha512-5ihruS0AvqED1K8ci/u7RwAcvN6nbltkNlBvFeq04rqYpBLqEYB6CIqTQxQJYSO7cYJ0UJhdA/H0rysx7ea2JQ==
+  dependencies:
+    react "^16.5.0 || ^17.0.1 || ^18.1.0"
+    react-dom "^16.5.0 || ^17.0.1 || ^18.1.0"
+    survey-core "*"
 
 svgo@1.3.2:
   version "1.3.2"
