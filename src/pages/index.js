@@ -258,11 +258,11 @@ const IndexPage = () => {
         <div class="container">
           <div class="site-footer-inner">
             <div class="brand footer-brand">
-              <StaticImage
+              {/* <StaticImage
                 class="header-logo-image"
                 src="../images/yoursea-icon.svg"
                 alt="Logo"
-              />
+              /> */}
             </div>
             <ul class="footer-links list-reset">
               <li>
