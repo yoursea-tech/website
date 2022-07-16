@@ -9,14 +9,12 @@ const IndexPage = () => {
         <div class="container">
           <div class="site-header-inner">
             <div class="brand header-brand">
-              <h1 class="m-0">
-                  <StaticImage
-                    class="header-logo-image"
-                    src="../images/yoursea-icon.svg"
-                    alt="Logo"
-                  />
-                  <span className="ml-1">YourSEA</span>
-              </h1>
+              <StaticImage
+                class="header-logo-image"
+                src="../images/yoursea-icon.svg"
+                alt="Logo"
+              />
+              <h1 class="m-0">YourSEA</h1>
             </div>
           </div>
         </div>
@@ -27,7 +25,7 @@ const IndexPage = () => {
           <div class="container">
             <div class="hero-inner">
               <div class="hero-copy">
-                <h1 class="hero-title mt-0">Ride our wave</h1>
+                <h2 class="hero-title mt-0">Find better spots</h2>
                 <p class="hero-paragraph">
                   We are building next generation services to help you choose
                   the best sea spot wherever you go.
@@ -37,7 +35,7 @@ const IndexPage = () => {
                     Take our survey
                   </Link>
                   <Link class="button" to="/showcase">
-                    Showcase
+                    View our presentation
                   </Link>
                 </div>
               </div>
@@ -93,65 +91,25 @@ const IndexPage = () => {
         <section class="features section">
           <div class="container">
             <div class="features-inner section-inner has-bottom-divider">
-              <div class="features-wrap">
-                <div
-                  class="feature text-center is-revealing"
-                  data-sal="slide-up"
-                  data-sal-delay="100"
-                  data-sal-easing="ease"
-                >
+              <div className="features-title">
+                <h2>Meet the team</h2>
+              </div>
+              <div
+                class="features-wrap"
+                data-sal="zoom-out"
+                data-sal-delay="100"
+                data-sal-duration="500"
+                data-sal-easing="ease"
+              >
+                <div class="feature text-center is-revealing">
                   <div class="feature-inner">
                     <div class="feature-icon">
                       <StaticImage
-                        src="../images/feature-icon-01.svg"
-                        alt="Feature 01"
-                      />
-                    </div>
-                    <h4 class="feature-title mt-24">Be Productive</h4>
-                    <p class="text-sm mb-0">
-                      Fermentum posuere urna nec tincidunt praesent semper
-                      feugiat nibh. A arcu cursus vitae congue mauris. Nam at
-                      lectus urna duis convallis. Mauris rhoncus aenean vel elit
-                      scelerisque mauris.
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="feature text-center is-revealing"
-                  data-sal="slide-up"
-                  data-sal-delay="200"
-                  data-sal-easing="ease"
-                >
-                  <div class="feature-inner">
-                    <div class="feature-icon">
-                      <StaticImage
-                        src="../images/feature-icon-02.svg"
-                        alt="Feature 02"
-                      />
-                    </div>
-                    <h4 class="feature-title mt-24">Be Productive</h4>
-                    <p class="text-sm mb-0">
-                      Fermentum posuere urna nec tincidunt praesent semper
-                      feugiat nibh. A arcu cursus vitae congue mauris. Nam at
-                      lectus urna duis convallis. Mauris rhoncus aenean vel elit
-                      scelerisque mauris.
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="feature text-center is-revealing"
-                  data-sal="slide-up"
-                  data-sal-delay="300"
-                  data-sal-easing="ease"
-                >
-                  <div class="feature-inner">
-                    <div class="feature-icon">
-                      <StaticImage
-                        src="../images/feature-icon-03.svg"
+                        src="../images/martina.jpg"
                         alt="Feature 03"
                       />
                     </div>
-                    <h4 class="feature-title mt-24">Be Productive</h4>
+                    <h4 class="feature-title mt-24">Martina FREZZA</h4>
                     <p class="text-sm mb-0">
                       Fermentum posuere urna nec tincidunt praesent semper
                       feugiat nibh. A arcu cursus vitae congue mauris. Nam at
@@ -160,20 +118,43 @@ const IndexPage = () => {
                     </p>
                   </div>
                 </div>
-                <div
-                  class="feature text-center is-revealing"
-                  data-sal="slide-up"
-                  data-sal-delay="100"
-                  data-sal-easing="ease"
-                >
+                <div class="feature text-center is-revealing">
+                  <div class="feature-inner">
+                    <div class="feature-icon">
+                      <StaticImage src="../images/dumi.jpg" alt="Feature 04" />
+                    </div>
+                    <h4 class="feature-title mt-24">Dumitrița TIUTION</h4>
+                    <p class="text-sm mb-0">
+                      Fermentum posuere urna nec tincidunt praesent semper
+                      feugiat nibh. A arcu cursus vitae congue mauris. Nam at
+                      lectus urna duis convallis. Mauris rhoncus aenean vel elit
+                      scelerisque mauris.
+                    </p>
+                  </div>
+                </div>
+                <div class="feature text-center is-revealing">
+                  <div class="feature-inner">
+                    <div class="feature-icon">
+                      <StaticImage src="../images/cata.jpg" alt="Feature 01" />
+                    </div>
+                    <h4 class="feature-title mt-24">Catalin SABOU</h4>
+                    <p class="text-sm mb-0">
+                      Fermentum posuere urna nec tincidunt praesent semper
+                      feugiat nibh. A arcu cursus vitae congue mauris. Nam at
+                      lectus urna duis convallis. Mauris rhoncus aenean vel elit
+                      scelerisque mauris.
+                    </p>
+                  </div>
+                </div>
+                <div class="feature text-center is-revealing">
                   <div class="feature-inner">
                     <div class="feature-icon">
                       <StaticImage
-                        src="../images/feature-icon-04.svg"
-                        alt="Feature 04"
+                        src="../images/marco.jpeg"
+                        alt="Feature 02"
                       />
                     </div>
-                    <h4 class="feature-title mt-24">Be Productive</h4>
+                    <h4 class="feature-title mt-24">Marco BISEGNA</h4>
                     <p class="text-sm mb-0">
                       Fermentum posuere urna nec tincidunt praesent semper
                       feugiat nibh. A arcu cursus vitae congue mauris. Nam at
@@ -182,47 +163,20 @@ const IndexPage = () => {
                     </p>
                   </div>
                 </div>
-                <div
-                  class="feature text-center is-revealing"
-                  data-sal="slide-up"
-                  data-sal-delay="200"
-                  data-sal-easing="ease"
-                >
+                <div class="feature text-center is-revealing">
                   <div class="feature-inner">
                     <div class="feature-icon">
                       <StaticImage
-                        src="../images/feature-icon-05.svg"
+                        src="../images/flavio.jpeg"
                         alt="Feature 05"
                       />
                     </div>
-                    <h4 class="feature-title mt-24">Be Productive</h4>
+                    <h4 class="feature-title mt-24">Flavio CORDARI</h4>
                     <p class="text-sm mb-0">
-                      Fermentum posuere urna nec tincidunt praesent semper
-                      feugiat nibh. A arcu cursus vitae congue mauris. Nam at
-                      lectus urna duis convallis. Mauris rhoncus aenean vel elit
-                      scelerisque mauris.
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="feature text-center is-revealing"
-                  data-sal="slide-up"
-                  data-sal-delay="300"
-                  data-sal-easing="ease"
-                >
-                  <div class="feature-inner">
-                    <div class="feature-icon">
-                      <StaticImage
-                        src="../images/feature-icon-06.svg"
-                        alt="Feature 06"
-                      />
-                    </div>
-                    <h4 class="feature-title mt-24">Be Productive</h4>
-                    <p class="text-sm mb-0">
-                      Fermentum posuere urna nec tincidunt praesent semper
-                      feugiat nibh. A arcu cursus vitae congue mauris. Nam at
-                      lectus urna duis convallis. Mauris rhoncus aenean vel elit
-                      scelerisque mauris.
+                      A Computer engineer, reasercher and hobbyst willing to
+                      understand the world a little more. Mainly into software
+                      development, cybersecurity, mathematics/physics,
+                      electronics and other geeky stuff.
                     </p>
                   </div>
                 </div>
@@ -304,11 +258,11 @@ const IndexPage = () => {
         <div class="container">
           <div class="site-footer-inner">
             <div class="brand footer-brand">
-                <StaticImage
-                  class="header-logo-image"
-                  src="../images/yoursea-icon.svg"
-                  alt="Logo"
-                />
+              <StaticImage
+                class="header-logo-image"
+                src="../images/yoursea-icon.svg"
+                alt="Logo"
+              />
             </div>
             <ul class="footer-links list-reset">
               <li>
