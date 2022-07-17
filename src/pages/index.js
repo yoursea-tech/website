@@ -94,14 +94,14 @@ const IndexPage = () => {
               <div className="features-title">
                 <h2>Meet the team</h2>
               </div>
-              <div
-                class="features-wrap"
-                data-sal="zoom-out"
-                data-sal-delay="100"
-                data-sal-duration="500"
-                data-sal-easing="ease"
-              >
-                <div class="feature text-center is-revealing">
+              <div class="features-wrap">
+                <div
+                  class="feature text-center is-revealing"
+                  data-sal="zoom-out"
+                  data-sal-delay="100"
+                  data-sal-duration="500"
+                  data-sal-easing="ease"
+                >
                   <div class="feature-inner">
                     <div class="feature-icon">
                       <StaticImage
@@ -118,7 +118,13 @@ const IndexPage = () => {
                     </p>
                   </div>
                 </div>
-                <div class="feature text-center is-revealing">
+                <div
+                  class="feature text-center is-revealing"
+                  data-sal="zoom-out"
+                  data-sal-delay="100"
+                  data-sal-duration="500"
+                  data-sal-easing="ease"
+                >
                   <div class="feature-inner">
                     <div class="feature-icon">
                       <StaticImage src="../images/dumi.jpg" alt="Feature 04" />
@@ -132,7 +138,13 @@ const IndexPage = () => {
                     </p>
                   </div>
                 </div>
-                <div class="feature text-center is-revealing">
+                <div
+                  class="feature text-center is-revealing"
+                  data-sal="zoom-out"
+                  data-sal-delay="100"
+                  data-sal-duration="500"
+                  data-sal-easing="ease"
+                >
                   <div class="feature-inner">
                     <div class="feature-icon">
                       <StaticImage src="../images/cata.jpg" alt="Feature 01" />
@@ -146,7 +158,13 @@ const IndexPage = () => {
                     </p>
                   </div>
                 </div>
-                <div class="feature text-center is-revealing">
+                <div
+                  class="feature text-center is-revealing"
+                  data-sal="zoom-out"
+                  data-sal-delay="100"
+                  data-sal-duration="500"
+                  data-sal-easing="ease"
+                >
                   <div class="feature-inner">
                     <div class="feature-icon">
                       <StaticImage
@@ -154,7 +172,15 @@ const IndexPage = () => {
                         alt="Feature 02"
                       />
                     </div>
-                    <h4 class="feature-title mt-24">Marco BISEGNA</h4>
+                    <h4
+                      class="feature-title mt-24"
+                      data-sal="zoom-out"
+                      data-sal-delay="100"
+                      data-sal-duration="500"
+                      data-sal-easing="ease"
+                    >
+                      Marco BISEGNA
+                    </h4>
                     <p class="text-sm mb-0">
                       Fermentum posuere urna nec tincidunt praesent semper
                       feugiat nibh. A arcu cursus vitae congue mauris. Nam at
@@ -163,7 +189,13 @@ const IndexPage = () => {
                     </p>
                   </div>
                 </div>
-                <div class="feature text-center is-revealing">
+                <div
+                  class="feature text-center is-revealing"
+                  data-sal="zoom-out"
+                  data-sal-delay="100"
+                  data-sal-duration="500"
+                  data-sal-easing="ease"
+                >
                   <div class="feature-inner">
                     <div class="feature-icon">
                       <StaticImage

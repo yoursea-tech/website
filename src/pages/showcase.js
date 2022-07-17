@@ -1,10 +1,11 @@
 import * as React from "react";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import '../../node_modules/reveal.js/dist/reveal.css'
 import '../../node_modules/reveal.js/dist/theme/black.css'
 
 
 const ShowcasePage = () => {
+  const deckEl = useRef(null)
   useEffect(() => {
     import(/* webpackChunkName: "Reveal" */ '../../node_modules/reveal.js/dist/reveal').then( module1 => {
       const Reveal = module1.default
@@ -14,13 +15,14 @@ const ShowcasePage = () => {
           embedded: true,
           plugins: [Markdown]
         });
+        deckEl.current.style = 'height: ' + window.innerHeight + 'px'
         deck.initialize();
       })
     })
   }, []);
 
   return (
-    <div className="reveal deck" style={{height: '100vh'}}>
+    <div className="reveal deck"  ref={deckEl}>
       <div className="slides">
         <section data-markdown='/showcase.md'>
         </section>
