@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useEffect, useState } from "react";
-import "survey-core/modern.min.css";
+import "survey-core/defaultV2.min.css";
 import { StylesManager, Model } from "survey-core";
 import { Survey } from "survey-react-ui";
 
@@ -9,7 +9,7 @@ const SurveyPage = () => {
   const [model, setModel] = useState(undefined);
 
   useEffect(() => {
-    StylesManager.applyTheme("modern");
+    StylesManager.applyTheme("defaultV2");
     fetch("survey.json")
       .then((res) => res.json())
       .then((res) => {
