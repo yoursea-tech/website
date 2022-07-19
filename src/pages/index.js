@@ -111,10 +111,7 @@ const IndexPage = () => {
                     </div>
                     <h4 class="feature-title mt-24">Martina FREZZA</h4>
                     <p class="text-sm mb-0">
-                      Fermentum posuere urna nec tincidunt praesent semper
-                      feugiat nibh. A arcu cursus vitae congue mauris. Nam at
-                      lectus urna duis convallis. Mauris rhoncus aenean vel elit
-                      scelerisque mauris.
+                    An Environmental engineer, passionate about finding a more sustainable world. Focused on data research and analyst, believes that satellite data can be helpful in changing the world
                     </p>
                   </div>
                 </div>
@@ -151,10 +148,11 @@ const IndexPage = () => {
                     </div>
                     <h4 class="feature-title mt-24">Catalin SABOU</h4>
                     <p class="text-sm mb-0">
-                      Fermentum posuere urna nec tincidunt praesent semper
-                      feugiat nibh. A arcu cursus vitae congue mauris. Nam at
-                      lectus urna duis convallis. Mauris rhoncus aenean vel elit
-                      scelerisque mauris.
+                      A satellite data analyst, passionate about the "eyes in
+                      the sky", with the help of which we can see, analyze and
+                      understand much better the environment in which we live.
+                      Focused on data acquisition, processing and
+                      interpretation, offering reliable results and solutions.
                     </p>
                   </div>
                 </div>
@@ -182,10 +180,7 @@ const IndexPage = () => {
                       Marco BISEGNA
                     </h4>
                     <p class="text-sm mb-0">
-                      Fermentum posuere urna nec tincidunt praesent semper
-                      feugiat nibh. A arcu cursus vitae congue mauris. Nam at
-                      lectus urna duis convallis. Mauris rhoncus aenean vel elit
-                      scelerisque mauris.
+                    A business developer who aims to promote a virtuous approach to the surrounding world through satellite technologies. Centered on business development and sustainability with a focus on the circular economy systems.
                     </p>
                   </div>
                 </div>
