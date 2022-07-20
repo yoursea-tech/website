@@ -111,7 +111,10 @@ const IndexPage = () => {
                     </div>
                     <h4 class="feature-title mt-24">Martina FREZZA</h4>
                     <p class="text-sm mb-0">
-                    An Environmental engineer, passionate about finding a more sustainable world. Focused on data research and analyst, believes that satellite data can be helpful in changing the world
+                      An Environmental engineer, passionate about finding a more
+                      sustainable world. Focused on data research and analyst,
+                      believes that satellite data can be helpful in changing
+                      the world
                     </p>
                   </div>
                 </div>
@@ -128,10 +131,9 @@ const IndexPage = () => {
                     </div>
                     <h4 class="feature-title mt-24">Dumitrița TIUTION</h4>
                     <p class="text-sm mb-0">
-                      Fermentum posuere urna nec tincidunt praesent semper
-                      feugiat nibh. A arcu cursus vitae congue mauris. Nam at
-                      lectus urna duis convallis. Mauris rhoncus aenean vel elit
-                      scelerisque mauris.
+                      An activity planner with land surveying and remote sensing
+                      background that identifies who, what, when and how much
+                      does our clients and partners need
                     </p>
                   </div>
                 </div>
@@ -180,7 +182,11 @@ const IndexPage = () => {
                       Marco BISEGNA
                     </h4>
                     <p class="text-sm mb-0">
-                    A business developer who aims to promote a virtuous approach to the surrounding world through satellite technologies. Centered on business development and sustainability with a focus on the circular economy systems.
+                      A business developer who aims to promote a virtuous
+                      approach to the surrounding world through satellite
+                      technologies. Centered on business development and
+                      sustainability with a focus on the circular economy
+                      systems.
                     </p>
                   </div>
                 </div>
@@ -200,10 +206,10 @@ const IndexPage = () => {
                     </div>
                     <h4 class="feature-title mt-24">Flavio CORDARI</h4>
                     <p class="text-sm mb-0">
-                      A Computer engineer, reasercher and hobbyst willing to
-                      understand the world a little more. Mainly into software
-                      development, cybersecurity, mathematics/physics,
-                      electronics and other geeky stuff.
+                      A Computer engineer and reasercher willing to understand
+                      the world a little more. Mainly into software development,
+                      cybersecurity, mathematics/physics, electronics and other
+                      geeky stuff.
                     </p>
                   </div>
                 </div>
