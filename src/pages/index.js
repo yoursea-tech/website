@@ -131,9 +131,7 @@ const IndexPage = () => {
                     </div>
                     <h4 class="feature-title mt-24">Dumitrița TIUTION</h4>
                     <p class="text-sm mb-0">
-                      An activity planner with land surveying and remote sensing
-                      background that identifies who, what, when and how much
-                      does our clients and partners need
+                    No more, no less than a geodetic and geological engineer with land surveying and remote sensing background that identifies: who, what, when and how much does our clients and partners need
                     </p>
                   </div>
                 </div>

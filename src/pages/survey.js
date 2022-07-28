@@ -10,14 +10,14 @@ const SurveyPage = () => {
 
   useEffect(() => {
     StylesManager.applyTheme("defaultV2");
-    fetch("survey.json")
+    fetch("/survey.json")
       .then((res) => res.json())
       .then((res) => {
         setModel(new Model(res));
       });
   }, []);
 
-  return !isSSR && model && <Survey model={model} />;
+  return isSSR ? <div>No SSR</div> : model && <Survey model={model} />;
 };
 
 export default SurveyPage;
