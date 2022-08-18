@@ -1,95 +1,44 @@
 import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
+import BGVideo from "../assets/video.webm";
 
 const IndexPage = () => {
   return (
     <div class="body-wrap">
-      <header class="site-header">
-        <div class="container">
-          <div class="site-header-inner">
-            <div class="brand header-brand">
-              <StaticImage
-                class="header-logo-image"
-                src="../images/yoursea-icon.svg"
-                alt="Logo"
-              />
-              <h1 class="m-0">YourSEA</h1>
+      <header class="vh-100 position-relative">
+        <div
+          class="container h-100 col-xxl-8 px-4 py-5 position-relative"
+          style={{ zIndex: 2 }}
+        >
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6"></div>
+            <div class="col-lg-6">
+              <h1 class="display-5 fw-bold lh-1 mb-3">Find better spots</h1>
+              <p class="lead text-white">
+                We are building next generation services to help you choose the
+                best sea spot wherever you go.
+              </p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <Link class="button button-primary" to="/survey">
+                  Take our survey
+                </Link>
+                <Link class="button" to="/presentation">
+                  View our presentation
+                </Link>
+              </div>
             </div>
           </div>
+        </div>
+        <div class="video-container" style={{ zIndex: "1" }}>
+          <div className="layover"></div>
+          <video autoplay="true" muted="true" loop="true" src={BGVideo}></video>
         </div>
       </header>
 
       <main>
-        <section class="hero">
-          <div class="container">
-            <div class="hero-inner">
-              <div class="hero-copy">
-                <h2 class="hero-title mt-0">Find better spots</h2>
-                <p class="hero-paragraph">
-                  We are building next generation services to help you choose
-                  the best sea spot wherever you go.
-                </p>
-                <div class="hero-cta">
-                  <Link class="button button-primary" to="/survey">
-                    Take our survey
-                  </Link>
-                  <Link class="button" to="/showcase">
-                    View our presentation
-                  </Link>
-                </div>
-              </div>
-              <div class="hero-figure anime-element">
-                <svg
-                  class="placeholder"
-                  width="528"
-                  height="396"
-                  viewBox="0 0 528 396"
-                >
-                  <rect
-                    width="528"
-                    height="396"
-                    style={{ fill: "transparent" }}
-                  />
-                </svg>
-                <div
-                  class="hero-figure-box hero-figure-box-01"
-                  data-rotation="45deg"
-                ></div>
-                <div
-                  class="hero-figure-box hero-figure-box-02"
-                  data-rotation="-45deg"
-                ></div>
-                <div
-                  class="hero-figure-box hero-figure-box-03"
-                  data-rotation="0deg"
-                ></div>
-                <div
-                  class="hero-figure-box hero-figure-box-04"
-                  data-rotation="-135deg"
-                ></div>
-                <div class="hero-figure-box hero-figure-box-05"></div>
-                <div class="hero-figure-box hero-figure-box-06"></div>
-                <div class="hero-figure-box hero-figure-box-07"></div>
-                <div
-                  class="hero-figure-box hero-figure-box-08"
-                  data-rotation="-22deg"
-                ></div>
-                <div
-                  class="hero-figure-box hero-figure-box-09"
-                  data-rotation="-52deg"
-                ></div>
-                <div
-                  class="hero-figure-box hero-figure-box-10"
-                  data-rotation="-50deg"
-                ></div>
-              </div>
-            </div>
-          </div>
-        </section>
-
         <section class="features section">
-          <div class="container">
+          <div class="">
             <div class="features-inner section-inner has-bottom-divider">
               <div className="features-title">
                 <h2>Meet the team</h2>
@@ -104,34 +53,14 @@ const IndexPage = () => {
                 >
                   <div class="feature-inner">
                     <div class="feature-icon">
-                      <StaticImage
-                        src="../images/martina.jpg"
-                        alt="Feature 03"
-                      />
-                    </div>
-                    <h4 class="feature-title mt-24">Martina FREZZA</h4>
-                    <p class="text-sm mb-0">
-                      An Environmental engineer, passionate about finding a more
-                      sustainable world. Focused on data research and analyst,
-                      believes that satellite data can be helpful in changing
-                      the world
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="feature text-center is-revealing"
-                  data-sal="zoom-out"
-                  data-sal-delay="100"
-                  data-sal-duration="500"
-                  data-sal-easing="ease"
-                >
-                  <div class="feature-inner">
-                    <div class="feature-icon">
                       <StaticImage src="../images/dumi.jpg" alt="Feature 04" />
                     </div>
                     <h4 class="feature-title mt-24">Dumitrița TIUTION</h4>
                     <p class="text-sm mb-0">
-                    No more, no less than a geodetic and geological engineer with land surveying and remote sensing background that identifies: who, what, when and how much does our clients and partners need
+                      No more, no less than a geodetic and geological engineer
+                      with land surveying and remote sensing background that
+                      identifies: who, what, when and how much does our clients
+                      and partners need
                     </p>
                   </div>
                 </div>
@@ -215,74 +144,6 @@ const IndexPage = () => {
             </div>
           </div>
         </section>
-
-        {/* <section class="pricing section">
-          <div class="container-sm">
-            <div class="pricing-inner section-inner">
-              <div class="pricing-header text-center">
-                <h2 class="section-title mt-0">Unlimited for all</h2>
-                <p class="section-paragraph mb-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut ad quis nostrud.
-                </p>
-              </div>
-              <div class="pricing-tables-wrap">
-                <div class="pricing-table">
-                  <div class="pricing-table-inner is-revealing">
-                    <div class="pricing-table-main">
-                      <div class="pricing-table-header pb-24">
-                        <div class="pricing-table-price">
-                          <span class="pricing-table-price-currency h2">$</span>
-                          <span class="pricing-table-price-amount h1">49</span>
-                          <span class="text-xs">/month</span>
-                        </div>
-                      </div>
-                      <div class="pricing-table-features-title text-xs pt-24 pb-24">
-                        What you will get
-                      </div>
-                      <ul class="pricing-table-features list-reset text-xs">
-                        <li>
-                          <span>Lorem ipsum dolor sit nisi</span>
-                        </li>
-                        <li>
-                          <span>Lorem ipsum dolor sit nisi</span>
-                        </li>
-                        <li>
-                          <span>Lorem ipsum dolor sit nisi</span>
-                        </li>
-                        <li>
-                          <span>Lorem ipsum dolor sit nisi</span>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="pricing-table-cta mb-8">
-                      <a
-                        class="button button-primary button-shadow button-block"
-                        href="#"
-                      >
-                        Pre order now
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="cta section">
-          <div class="container">
-            <div class="cta-inner section-inner">
-              <h3 class="section-title mt-0">Still not convinced on buying?</h3>
-              <div class="cta-cta">
-                <a class="button button-primary button-wide-mobile" href="#">
-                  Get in touch
-                </a>
-              </div>
-            </div>
-          </div>
-        </section> */}
       </main>
 
       <footer class="site-footer">
