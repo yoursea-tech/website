@@ -33,6 +33,12 @@ module.exports = {
       },
       __key: "pages",
     },
-    "gatsby-plugin-scroll-reveal"
+    {
+      resolve: 'gatsby-plugin-i18n',
+      options: {        
+        langKeyDefault: 'en',
+        useLangKeyLayout: false
+      }
+    }
   ],
 };
