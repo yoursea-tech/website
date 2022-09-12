@@ -16,7 +16,7 @@ const IndexPage = () => {
           src={BGVideo}
           class="position-absolute top-50 start-50 translate-middle"
         ></video>
-        <div class="position-absolute top-50 start-50 translate-middle">
+        <div class="position-absolute top-50 start-50 translate-middle w-75">
           <Hero />
         </div>
       </header>
