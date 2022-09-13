@@ -21,9 +21,6 @@ export default function Team() {
             <StaticImage src="../images/flavio.jpeg"/>
           </TeamItem>
         </div>
-        <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
-
-        </div>
       </div>
     </>
   );

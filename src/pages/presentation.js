@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useEffect, useRef } from "react";
 import '../../node_modules/reveal.js/dist/reveal.css'
-import '../../node_modules/reveal.js/dist/theme/black.css'
+import '../../node_modules/reveal.js/dist/theme/sky.css'
 
 
 const PresentationPage = () => {
@@ -17,6 +17,9 @@ const PresentationPage = () => {
         });
         deckEl.current.style = 'height: ' + window.innerHeight + 'px'
         deck.initialize();
+        deck.configure({
+          backgroundTransition: 'convex'
+        })
       })
     })
   }, []);
@@ -24,7 +27,7 @@ const PresentationPage = () => {
   return (
     <div className="reveal deck"  ref={deckEl}>
       <div className="slides">
-        <section data-markdown='/showcase.md'>
+        <section data-markdown='/showcase.md' data-transition="convex">
         </section>
       </div>
     </div>

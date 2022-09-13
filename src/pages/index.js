@@ -1,9 +1,9 @@
 import * as React from "react";
-import { StaticImage } from "gatsby-plugin-image";
-import { Link } from "gatsby";
 import BGVideo from "../assets/video.webm";
+import PrevImg from "../images/prev-video.png"
 import Hero from "../components/Hero";
 import Team from "../components/Team";
+
 
 const IndexPage = () => {
   return (
@@ -15,6 +15,7 @@ const IndexPage = () => {
           loop="true"
           src={BGVideo}
           class="position-absolute top-50 start-50 translate-middle"
+          poster={PrevImg}
         ></video>
         <div class="position-absolute top-50 start-50 translate-middle w-75">
           <Hero />

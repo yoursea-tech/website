@@ -11,15 +11,30 @@ export default function Hero() {
         <h2 class="display-5 fw-bold text-white">Find better spots</h2>
         <div class="col-lg-6 mx-auto text-white">
           <p class="lead mb-4">
-            Next generation water quality index built upon satellite and ground
+            Next generation water quality index built upon satellite
             data.
           </p>
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <Link to="/it/survey" type="button" class="btn btn-dark btn-lg px-4 gap-3">
-                Sondaggio
+          <Link
+              to="/presentation"
+              type="button"
+              class="btn btn-secondary btn-lg px-4 gap-3"
+            >
+              Tour
             </Link>
-            <Link to="/ro/survey" type="button" class="btn btn-dark btn-lg px-4 gap-3">
-                Sondaj
+            <Link
+              to="/it/survey"
+              type="button"
+              class="btn btn-dark btn-lg px-4 gap-3"
+            >
+              Sondaggio
+            </Link>
+            <Link
+              to="/ro/survey"
+              type="button"
+              class="btn btn-dark btn-lg px-4 gap-3"
+            >
+              Sondaj
             </Link>
           </div>
         </div>
