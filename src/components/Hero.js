@@ -1,43 +1,16 @@
-import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 export default function Hero() {
+  const { t } = useTranslation()
+
   return (
     <>
-      <div class="px-4 py-5 text-center text-black bg-dark bg-opacity-25 rounded-5">
-        <StaticImage class="" src="../images/trident.png" />
-        <h1 class="display-1 fw-bold">YourSEA</h1>
-        <h2 class="display-5 fw-bold text-white">Find better spots</h2>
-        <div class="col-lg-6 mx-auto text-white">
-          <p class="lead mb-4">
-            Next generation water quality index built upon satellite
-            data.
-          </p>
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-          <Link
-              to="/presentation"
-              type="button"
-              class="btn btn-secondary btn-lg px-4 gap-3"
-            >
-              Tour
-            </Link>
-            <Link
-              to="/it/survey"
-              type="button"
-              class="btn btn-dark btn-lg px-4 gap-3"
-            >
-              Sondaggio
-            </Link>
-            <Link
-              to="/ro/survey"
-              type="button"
-              class="btn btn-dark btn-lg px-4 gap-3"
-            >
-              Sondaj
-            </Link>
-          </div>
-        </div>
+      <div className="px-4 py-5 text-center text-black bg-dark bg-opacity-25 rounded-5">
+        <StaticImage className="" src="../images/trident.png" alt="logo"/>
+        <h1 className="display-1 fw-bold">YourSEA</h1>
+        <h2 className="display-5 fw-bold text-white">{t("motto")}</h2>
       </div>
     </>
   );
