@@ -71,7 +71,7 @@ const IndexPage = () => {
 
             <p className="text-center">{t("help.description")} </p>
             <div  className="row g-4 py-5 justify-content-center">
-              <div className="col-4 col-lg-6">
+              <div className="col-9 col-lg-6">
               <Link to='/survey'>
                 <StaticImage src="../images/qrcode.png"/>
               </Link>
